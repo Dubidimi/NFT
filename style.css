@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Outfit;
+    background-color: #0d1a2d;
+}
+
+@media screen and (min-width:440px) {
+    .container {
+        margin: 150px auto;
+        display: block;
+        width: 400px;
+        background-color: #15273f;
+        padding: 20px;
+        border-radius: .5rem;
+    }
+    #mainimg {
+        width: 100%;
+        border-radius: .5rem;
+        cursor: pointer;
+
+    }
+
+    .mainimg::after {
+        content: url("./images/icon-view.svg");
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .mainimg:hover::after {
+    opacity: 1;
+    }
+    .mainimg img:hover {
+        background-color: #05faf7;
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    .container h1  {
+        color: white;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+    .container h1:hover {
+        color: #05faf7;
+        cursor: pointer;
+    }
+    .container p {
+        font-size: 24px;
+        color: #4d6384;
+    }
+    #eth {
+        display: flex;
+        align-items: center;
+    }
+    #time {
+        margin-left: 150px;
+    }
+    #timetext {
+        margin-left: 10px;
+        color:#8ca9d4;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    #ethtext {
+    margin-left: 10px;
+    color: #05faf7;
+    font-weight: 500;
+    font-size: 20px;
+    }
+    #profile {
+        display: flex;
+        align-items: center;
+    }
+    #profile img {
+        width: 50px;
+        margin-right: 20px;
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+    #profile img:hover {
+        border: 1px solid #05faf7;
+        transition: all 0.2s ease-out;
+        cursor: pointer;
+        scale: 1.1;
+    }
+    #profile h2 {
+        font-size: 20px;
+        color: #8ca9d4;
+        font-weight: 400;
+    }
+    #name {
+        margin-left: 10px;
+        color: white;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    #name:hover {
+        color: #05faf7;
+    }
+}
+@media screen and (max-width:440px) {
+    .container {
+        margin: 50px 20px;
+        display: block;
+        width: 400px;
+        background-color: #15273f;
+        padding: 20px;
+        border-radius: .5rem;
+    }
+
+    #mainimg {
+        width: 100%;
+        border-radius: .5rem;
+        cursor: pointer;
+
+    }
+
+    .mainimg::after {
+        content: url("./images/icon-view.svg");
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .mainimg:hover::after {
+        opacity: 1;
+    }
+
+    .mainimg img:hover {
+        background-color: #05faf7;
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    .container h1 {
+        color: white;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+
+    .container h1:hover {
+        color: #05faf7;
+        cursor: pointer;
+    }
+
+    .container p {
+        font-size: 24px;
+        color: #4d6384;
+    }
+
+    #eth {
+        display: flex;
+        align-items: center;
+    }
+
+    #time {
+        margin-left: 150px;
+    }
+
+    #timetext {
+        margin-left: 10px;
+        color: #8ca9d4;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    #ethtext {
+        margin-left: 10px;
+        color: #05faf7;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    #profile {
+        display: flex;
+        align-items: center;
+    }
+
+    #profile img {
+        width: 50px;
+        margin-right: 20px;
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+
+    #profile img:hover {
+        border: 1px solid #05faf7;
+        transition: all 0.2s ease-out;
+        cursor: pointer;
+        scale: 1.1;
+    }
+
+    #profile h2 {
+        font-size: 20px;
+        color: #8ca9d4;
+        font-weight: 400;
+    }
+
+    #name {
+        margin-left: 10px;
+        color: white;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    #name:hover {
+        color: #05faf7;
+    }
+}
